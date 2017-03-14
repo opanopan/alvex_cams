@@ -18,4 +18,5 @@ docker run -d --net alvex -P --name cam1 olepan/alvex_camera1
 docker run -d --net alvex -P --name cam2 olepan/alvex_camera2
 docker run -d --net alvex -P --name proxy olepan/alvex_proxy
 
-echo "0.0.0.0 example.com" >> /etc/hosts
+ip=`docker inspect -f '{{ .NetworkSettings.Networks.alvex.IPAddress }}' proxy`
+echo "$ip example.com" >> /etc/hosts
