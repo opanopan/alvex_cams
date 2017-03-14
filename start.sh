@@ -7,6 +7,9 @@
 # http://example.com/cam1_8080
 # http://example.com/cam2_80
 # http://example.com/cam2_8080
+#
+# Конфиг nginx на сервере можно посмотреть командой:
+# docker exec proxy cat /etc/nginx/nginx.conf
 
 docker pull olepan/alvex_camera1
 docker pull olepan/alvex_camera2
