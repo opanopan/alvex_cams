@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Установи docker и запусти этот скриптик
+# Установи docker и запусти этот скриптик.
+# В браузере будет:
 # http://example.com - страница сервера
 # http://example.com/cam1_80 
 # http://example.com/cam1_8080
